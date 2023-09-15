@@ -1,38 +1,39 @@
 
-# asdf
-![NPM](https://img.shields.io/npm/l/NPM)
+# asdfasd
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 ## Description
     
-    asdf
+asdf
     
 ##Table of Contents
 
-**- [Installation](#installation)**
-**- [Usage](#usage)**
-**- [License](#license)**
-**- [Contributing](#contributing)**
-**- [Screenshots](#screenshots)**
+- **[Installation](#installation)**
+- **[Usage](#usage)**
+- **[License](#license)**
+- **[Contributing](#contributing)**
+- **[Tests](#tests)**
   
 ## Installation
     
-    asdf
+asdf
     
 ## Usage
     
-    sadf
+asdf
     
 ## License
     
-    BSD 2 Clause
-![Static Badge](https://img.shields.io/badge/BSD_2_Clause-blue)
+Creative Commons Zero v1.0 Universal
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Contributing
     
-    asdf
+sadf
 
 ## Tests
-    
+sdaf
 ## Questions
-    asdf
-    adsf
+
+Email: [nick.m.fillip@gmail.com](nick.m.fillip@gmail.com)
+Github Profile: [https://github.com/nfillip](https://github.com/nfillip)
     
