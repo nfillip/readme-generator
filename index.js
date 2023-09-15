@@ -24,7 +24,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'Provide contributions (separate each contributor with a "\"',
+        message: 'Provide contributions (separate each contributor with <br>): ',
         name: 'contributions',
     },
     {
@@ -61,43 +61,56 @@ function buildReadMe(data){
     const {title, description, installation, usage, contributions, test, githubUsername, email, license} = data;
     let licenseBadge = buildReadMeLicense(license);
     return `
-# ${title}
-${licenseBadge}
-## Description
+# ${title} ${licenseBadge}
+
+---
+##🔎Description
     
 ${description}
-    
-##Table of Contents
 
-**+ [Installation](#installation)**
-**+ [Usage](#usage)**
-**+ [License](#license)**
-**+ [Contributing](#contributing)**
-**+ [Tests](#tests)**
-  
-## Installation
+---    
+##📑Table of Contents
+
++ **[Installation](#installation)**
++ **[Usage](#usage)**
++ **[License](#license)**
++ **[Contributing](#contributing)**
++ **[Tests](#tests)**
+
+---  
+##❓Installation
     
 ${installation}
-    
-## Usage
+
+---    
+##🔎Usage
     
 ${usage}
-    
-## License
+
+---    
+##🔒License
     
 ${license}
 ${licenseBadge}
 
-## Contributing
+---
+##💠Contributing
     
 ${contributions}
 
-## Tests
+---
+##✔️Tests
 ${test}
-## Questions
 
+---
+##❓Questions
+
+**Contact Me:**
 Email: [${email}](${email})
 Github Profile: [https://github.com/${githubUsername}](https://github.com/${githubUsername})
+
+---
+© 2023 nfillip LLC. All Rights Reserved.
     `
 }
 
