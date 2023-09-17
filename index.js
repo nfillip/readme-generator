@@ -1,35 +1,38 @@
+//Installing packages for app fs and inquirer
 const inquirer = require('inquirer');
 const fs = require("fs");
 
+//function: initializes app of list of questions for user.
+function init() {
 inquirer.prompt([
     {
         type: 'input',
-        message: 'What is the name of your website?: ',
+        message: '\033[35mTitle\033[0m - What is the name of your website?: ',
         name: 'title'
     },
     {
         type: 'input',
-        message: 'Description - (short description explaining the what, why, and how of your project): ',
+        message: '\033[35mDescription\033[0m - (short description explaining the what, why, and how of your project): ',
         name: 'description'
     },
      {
         type: 'input',
-        message: 'Installation - (What ar eteh steps required to inall your project?)(If none: N/A): ',
+        message: '\033[35mInstallation\033[0m - (What are the steps required to install your project?)(If none: N/A): ',
         name: 'installation'
     },
     {
         type: 'input',
-        message: 'Usage - (Instructions/examples for how to use the website): ',
+        message: '\033[35mUsage\033[0m - (Instructions/examples for how to use the website): ',
         name: 'usage'
     },
     {
         type: 'input',
-        message: 'Provide contributions (separate each contributor with <br>): ',
+        message: '\033[35mContributions\033[0m - Provide contributions (separate each contributor with \033[91m<br>\033[0m): ',
         name: 'contributions',
     },
     {
         type: 'input',
-        message: 'Provide test instructions',
+        message: '\033[35mTests\033[0m - Provide test instructions',
         name: 'test',
     },
     {
@@ -54,9 +57,9 @@ inquirer.prompt([
     fs.writeFile('README.md', readMeString, (err) => err ? console.error(err) : console.log("added ReadMe successfully!"));
     
 })
+}
 
-
-
+//function: returns a formatted Readme string to then send through fs.
 function buildReadMe(data){
     const {title, description, installation, usage, contributions, test, githubUsername, email, license} = data;
     let licenseBadge = buildReadMeLicense(license);
@@ -114,6 +117,7 @@ Github Profile: [https://github.com/${githubUsername}](https://github.com/${gith
     `
 }
 
+//function: allow choices for all acceptable licenses in github. Returns badges
 function buildReadMeLicense(license1){
     switch(license1) {
         case "Apache 2.0 License":
@@ -157,9 +161,8 @@ function buildReadMeLicense(license1){
             break;
        
     }
-    
-    // let newString = license1.replace(/ /g,"_");
-    // return newString;
-    
+      
 }
 
+//init function call
+init();
