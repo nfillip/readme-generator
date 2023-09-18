@@ -54,7 +54,7 @@ inquirer.prompt([
     ]).then((data)=> {
     console.log(data)
     const readMeString = buildReadMe(data);
-    fs.writeFile('README.md', readMeString, (err) => err ? console.error(err) : console.log("added ReadMe successfully!"));
+    fs.writeFile('./Output/professionalREADME.md', readMeString, (err) => err ? console.error(err) : console.log("added ReadMe successfully!"));
     
 })
 }

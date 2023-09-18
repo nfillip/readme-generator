@@ -1,52 +1,27 @@
+# readme-generator
+ 
 
-# Title [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+## Description
 
----
-##🔎Description
-    
-Description
+Uses node.js with inquirer to use user inputs from command line entries to build a professional readme.
 
----    
-##📑Table of Contents
+## Installation
 
-+ **[Installation](#installation)**
-+ **[Usage](#usage)**
-+ **[License](#license)**
-+ **[Contributing](#contributing)**
-+ **[Tests](#tests)**
+N/A
 
----  
-##❓Installation
-    
-INstallation
+## Usage
 
----    
-##🔎Usage
-    
-Usage
+The reason behind the website is to display my ability to use node.JS along with remote and shipping modules in tandem with typical JS syntax. 
 
----    
-##🔒License
-    
-BSD 3 Clause
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+## License
 
----
-##💠Contributing
-    
-UDenver
+MIT
 
----
-##✔️Tests
-Instructrions
+## Credits
 
----
-##❓Questions
+UDenver Bootcamp Course
 
-**Contact Me:**
-Email: [nick.m.fillip@gmail.com](nick.m.fillip@gmail.com)
-Github Profile: [https://github.com/nfillip](https://github.com/nfillip)
+## Website Screenshot
+[Nick Fillip's Github Profile LINK](https://github.com/nfillip)
 
----
-© 2023 nfillip LLC. All Rights Reserved.
-    
+![Alt text](./readme-preview-screenshot.PNG)
